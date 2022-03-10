@@ -1,0 +1,23 @@
+<mat-toolbar color="transparent">
+   <span class="fill-remaining-space">
+     <button mat-icon-button [matMenuTriggerFor]="menu">
+       <mat-icon>menu</mat-icon>
+     </button>
+     <mat-menu #menu="matMenu" [overlapTrigger]="false">
+       <button mat-menu-item routerLink="/homepage">
+         <mat-icon>home</mat-icon>
+         <span>Home</span>
+       </button>
+       <button mat-menu-item routerLink="/cart">
+         <mat-icon>shopping_cart</mat-icon>
+         <span>Cart</span>
+       </button>
+     </mat-menu>
+   </span>
+   <span class="fill-remaining-space title" routerLink="/homepage">Shoe Zone</span>
+   <span class="icon" routerLink="/cart">
+     <mat-icon>shopping_cart</mat-icon>
+     <div style="font-size: 10px;" class="badge bg-danger">{{totalCartProducts}}</div>
+   </span>
+ </mat-toolbar>
+ <router-outlet></router-outlet>

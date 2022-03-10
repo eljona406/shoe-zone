@@ -1,0 +1,53 @@
+ .container-shoe{
+    //margin: auto;
+    //width: 100%;
+    height: 100%;
+  //  margin: auto;
+    padding-bottom: 10px;
+    text-align: -webkit-center;
+    @media (min-width: 1440px)and (max-width:3024px){
+      margin-left: 6%;
+      margin-right: 5%;
+      }
+      @media (min-width: 1024px)and (max-width:1439px){
+        margin-left: 8%;
+        margin-right: 8%;
+        }
+   
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    } 
+.card{
+    max-width: 400px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    //display: inline-flex;
+    float: left;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(175, 175, 175, 0.35) 0px 5px 15px;
+    border: none;
+    @media (min-width: 426px)and (max-width:768px){
+      margin-left: 20%;
+      margin-right: 20%;
+      }
+      @media (min-width: 769px)and (max-width:1039px){
+        margin:5px;
+        max-width: 400px;
+        }
+    .img-fluid{
+    width: 100%;
+    }
+    .truncated{
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width:100%;
+        overflow: hidden;
+    }
+    .card-title{
+      text-align: left;
+    }
+}
+}
