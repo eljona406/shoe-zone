@@ -8,6 +8,7 @@
     </div>
     <div class="card-body" (click)="seeDetails(products.id)">
       <h2 class="card-title truncated">{{products.name}}</h2>
+      <p class="card-text">{{products.price.amount}} {{products.price.currency}}</p>
       <p class="card-text truncated">{{products.description}}
       </p>
     </div>
